@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/nav_add"
+        android:title="@string/add_stock"
+        android:icon="@drawable/ic_add_scan"/>
+
+    <item
+        android:id="@+id/nav_history"
+        android:title="@string/history"
+        android:icon="@drawable/ic_history"/>
+
+    <item
+        android:id="@+id/nav_transaction"
+        android:title="@string/transaction"
+        android:icon="@drawable/ic_transaction" />
+
+</menu>
