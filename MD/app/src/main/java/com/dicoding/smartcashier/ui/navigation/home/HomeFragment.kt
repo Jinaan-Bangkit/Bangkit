@@ -1,43 +1,89 @@
 package com.dicoding.smartcashier.ui.navigation.home
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
 import androidx.fragment.app.Fragment
-import com.dicoding.smartcashier.R
+import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.GridLayoutManager
+import com.dicoding.smartcashier.data.pref.UserPreference
+import com.dicoding.smartcashier.data.remote.response.ItemsResponse
+import com.dicoding.smartcashier.databinding.FragmentHomeBinding
+import com.dicoding.smartcashier.ui.ViewModelFactory
 
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
 class HomeFragment : Fragment() {
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+    private lateinit var adapter: ItemAdapter
+    private lateinit var binding: FragmentHomeBinding
+    private val homeViewModel by viewModels<HomeViewModel> {
+        ViewModelFactory(UserPreference.getInstance(requireContext().dataStore))
     }
+    private lateinit var searchView: SearchView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
+    ): View {
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+        val layoutManager = GridLayoutManager(context, 2)
+        binding.rvItem.layoutManager = layoutManager
+        adapter = ItemAdapter()
+        binding.rvItem.adapter = adapter
+
+        homeViewModel.getItem()
+
+        setupView()
+        setupViewModel()
+        setupSearchView()
+
+        return binding.root
+    }
+    private fun setupSearchView() {
+        searchView = binding.search
+        searchView.clearFocus()
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                query?.let {
+                    homeViewModel.getItem()
+                }
+                searchView.clearFocus()
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                newText?.let {
+                    homeViewModel.getItem()
+                }
+                return false
+            }
+        })
+    }
+    private fun setupViewModel() {
+        homeViewModel.listItem.observe(viewLifecycleOwner) {
+            setRecycler(it)
+        }
+        homeViewModel.isLoading.observe(viewLifecycleOwner) {
+            showLoading(it)
+        }
     }
 
-    companion object {
+    private fun setupView() {
+        homeViewModel.getItem()
+    }
 
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun setRecycler(list: List<ItemsResponse>) {
+        adapter.submitList(list)
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+        binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
     }
 }

@@ -4,14 +4,18 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.dicoding.smartcashier.R
 import com.dicoding.smartcashier.data.pref.UserModel
 import com.dicoding.smartcashier.data.pref.UserPreference
 import com.dicoding.smartcashier.databinding.ActivityLoginBinding
+import com.dicoding.smartcashier.ui.MainActivity
 import com.dicoding.smartcashier.ui.ViewModelFactory
 import com.dicoding.smartcashier.ui.register.RegisterActivity
 
@@ -27,17 +31,15 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupViewModel()
+        loginViewModel = ViewModelProvider(this, ViewModelFactory(UserPreference.getInstance(dataStore)))[LoginViewModel::class.java]
+        loginViewModel.getUser().observe(this) {
+            this.user = it
+        }
+
         setupView()
         setupAction()
+        setLogin()
         registerAction()
-    }
-
-    private fun setupViewModel() {
-        loginViewModel = ViewModelProvider(this, ViewModelFactory(UserPreference.getInstance(dataStore)))[LoginViewModel::class.java]
-        loginViewModel.getUser().observe(this, { user->
-            this.user = user
-        })
     }
 
     private fun setupView() {
@@ -55,28 +57,46 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupAction() {
         binding.btnLogin.setOnClickListener {
-            val email = binding.edtEmail.text
+            val username = binding.edtUsername.text
             val password = binding.edtPassword.text
 
-            when {
-                email?.isEmpty()!! -> {
-                    binding.emailEditTextLayout.error = "Input your Email"
+            binding.btnLogin.setOnClickListener {
+                when {
+                    username?.isEmpty()!! -> {
+                        Toast.makeText(this, getString(R.string.empty_username), Toast.LENGTH_SHORT).show()
+                    }
+                    password?.isEmpty()!! -> {
+                        Toast.makeText(this, getString(R.string.empty_password), Toast.LENGTH_SHORT).show()
+                    }
+                    else -> {
+                        setLogin()
+                        showLoading()
+                    }
                 }
-                password?.isEmpty()!! -> {
-                    binding.passwordEditTextLayout.error = "Input your Password"
-                }
-
             }
         }
     }
 
-//    private fun setLogin() {
-//        binding.apply {
-//            val email = edtEmail.text.toString()
-//            val password = edtPassword.text.toString()
-//            loginViewModel.getLogin(email, password)
-//        }
-//    }
+    private fun setLogin() {
+        binding.apply {
+            val username = edtUsername.text.toString()
+            val password = edtPassword.text.toString()
+            loginViewModel.login(username, password)
+        }
+
+        loginViewModel.loginSuccess.observe(this) {loginSuccess ->
+            showLoading()
+            if (loginSuccess) {
+                val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                startActivity(intent)
+                finish()
+            }
+            else {
+                Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
 
     private fun registerAction() {
         binding.apply {
@@ -86,6 +106,13 @@ class LoginActivity : AppCompatActivity() {
                     finishAffinity()
                 }
             }
+        }
+        showLoading()
+    }
+
+    private fun showLoading() {
+        loginViewModel.isLoading.observe(this) { isLoading->
+            binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
         }
     }
 }

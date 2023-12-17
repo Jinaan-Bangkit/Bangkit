@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_login"
             android:layout_width="match_parent"
@@ -36,7 +37,7 @@
 
                 <TextView
                     android:id="@+id/tv_login"
-                    android:layout_width="291dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/login"
                     android:textAlignment="center"
@@ -46,7 +47,7 @@
 
                 <TextView
                     android:id="@+id/tv_acc_login"
-                    android:layout_width="291dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/acc"
@@ -56,28 +57,30 @@
                     android:textStyle="bold" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/emailEditTextLayout"
+                    android:id="@+id/userEditTextLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="5dp"
-                    android:hint="@string/email">
+                    android:hint="@string/username">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edt_email"
+                        android:id="@+id/edt_username"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:background="@drawable/edt_log"
-                        android:drawableLeft="@drawable/ic_email"
+                        android:drawableLeft="@drawable/ic_username"
                         android:drawablePadding="8dp"
                         android:textColor="@color/navy"
-                        android:inputType="textPersonName"/>
+                        android:inputType="textPersonName" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/passwordEditTextLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:hint="@string/password">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -89,7 +92,10 @@
                         android:drawableLeft="@drawable/ic_lock"
                         android:drawablePadding="8dp"
                         android:padding="8dp"
-                        android:textColor="@color/navy" />
+                        android:textColor="@color/navy"
+                        android:ems="8"
+                        android:inputType="textPassword"
+                        tools:ignore="SpeakableTextPresentCheck"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
@@ -123,10 +129,10 @@
             android:layout_height="wrap_content"
             android:text="@string/register"
             android:textAlignment="center"
-            android:textColor="@color/green"
+            android:textColor="@color/blue_222"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="70dp"
             app:layout_constraintBottom_toBottomOf="@+id/tv_no_have_acc"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_no_have_acc" />
