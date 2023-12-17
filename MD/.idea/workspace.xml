@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_xl" />
+        <device id="pixel_4" />
+        <device id="pixel" />
+        <device id="pixel_3" />
+      </config>
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72546c61-28c6-400f-b7ec-fd84469eb452" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/remote/api/ApiConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/remote/api/ApiService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/remote/response/ItemsResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/remote/response/LoginResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/remote/response/RegisterResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/navigation/home/HomeViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/navigation/home/ItemAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/register/RegisterViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/pref/UserModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/pref/UserModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/pref/UserPreference.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/data/pref/UserPreference.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/ViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/ViewModelFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/edit/EditActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/edit/EditActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/login/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/login/LoginActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/login/LoginViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/login/LoginViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/navigation/history/HistoryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/navigation/history/HistoryFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/navigation/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/navigation/home/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/register/RegisterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/dicoding/smartcashier/ui/register/RegisterActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\alyss\.android\avd\Pixel_3a_API_UpsideDownCakePrivacySandbox.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Smart Cashier" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Smart Cashier" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Smart Cashier" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Smart Cashier" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Data Class" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
+        <option value="navigationResourceFile" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KotlinCodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2YwJaZ1Mwux8lRHqeBazncZqnMe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "android-custom-viewC:/Users/alyss/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED": "RecyclerView",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "D:/SEMESTER 5/FoodHunt-master",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="android.template.-1022756061">
+      <recent name="com.dicoding.smartcashier.ui.register" />
+      <recent name="com.dicoding.smartcashier.ui.login" />
+    </key>
+    <key name="android.template.-1508378939">
+      <recent name="com.dicoding.smartcashier.ui.edit" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Capstone\Smart Cashier\app\src\main\res\drawable" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.dicoding.smartcashier.ui" />
+      <recent name="com.dicoding.smartcashier.ui.navigation.history" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="Smart_Cashier.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\alyss\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72546c61-28c6-400f-b7ec-fd84469eb452" name="Changes" comment="" />
+      <created>1701430772638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701430772638</updated>
+    </task>
+    <servers />
+  </component>
+</project>

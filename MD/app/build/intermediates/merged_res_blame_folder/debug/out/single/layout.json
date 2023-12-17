@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\list_history.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\list_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\activity_edit.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\activity_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\list_transaction.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\list_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\fragment_transaction.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\fragment_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\fragment_history.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\fragment_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\item_layout.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "com.dicoding.smartcashier.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "com.dicoding.smartcashier.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\fragment_add.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\fragment_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-mergeDebugResources-49:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\activity_login.xml"
+    }
+]

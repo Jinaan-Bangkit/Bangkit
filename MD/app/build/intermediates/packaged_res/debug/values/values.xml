@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue">#C9DBDC</color>
+    <color name="blue_222">#5087BA</color>
+    <color name="cream">#F9F9F9</color>
+    <color name="green">#006D72</color>
+    <color name="navy">#222D52</color>
+    <color name="purple">#858CA2</color>
+    <color name="purple_221">#566082</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="acc">YOUR ACCOUNT</string>
+    <string name="add_stock">Add</string>
+    <string name="all">All Have Solutions!</string>
+    <string name="app_name">Smart Cashier</string>
+    <string name="bought_item">Purchase Price :</string>
+    <string name="cashier">Cashier</string>
+    <string name="create">Make Something New!</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="email">Email</string>
+    <string name="empty_email">enter a email</string>
+    <string name="empty_password">enter a password</string>
+    <string name="empty_username">enter a username</string>
+    <string name="have_acc">Have an account?</string>
+    <string name="history">History</string>
+    <string name="home">Home</string>
+    <string name="home_name">S M A R T C A S H I E R</string>
+    <string name="id">Id</string>
+    <string name="id_item">Id Item : </string>
+    <string name="income">INCOME</string>
+    <string name="item">Name   : </string>
+    <string name="jumlah_barang">1</string>
+    <string name="jumlah_jual">Jumlah Jual</string>
+    <string name="kode">Kode</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">Logout</string>
+    <string name="name_item">Item Name</string>
+    <string name="no_have_acc">Don\'t have an account?</string>
+    <string name="password">Password</string>
+    <string name="price">Price</string>
+    <string name="price_amount">Price Transaction Amount</string>
+    <string name="price_income">Price Income</string>
+    <string name="price_profit">Price Profit</string>
+    <string name="profit">PROFIT</string>
+    <string name="rec_item">Recommendation Item</string>
+    <string name="register">Register</string>
+    <string name="sell_item">Sales Price : </string>
+    <string name="signup">SIGN UP</string>
+    <string name="title_item">Household Items</string>
+    <string name="transaction">Transaction</string>
+    <string name="transaction_amount">TRANSACTION AMOUNT</string>
+    <string name="tv_login">Login</string>
+    <string name="username">Username</string>
+    <string name="welcome">WELCOME</string>
+    <style name="Base.Theme.SmartCashier" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.SmartCashier" parent="Base.Theme.SmartCashier"/>
+</resources>

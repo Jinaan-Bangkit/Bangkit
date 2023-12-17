@@ -1,0 +1,206 @@
+[
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_history.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_add_scan.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_add_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_list_transaction.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\list_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_item_layout.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\menu_nav_bottom.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\menu\\nav_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_edt_log.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\edt_log.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_fragment_history.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\fragment_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_shop_min.png.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\shop_min.png"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_img.png.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\img.png"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_bottom_bg.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\bottom_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_edt_custom.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\edt_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_shop_plus.png.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\shop_plus.png"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_background.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\background.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_transaction.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.dicoding.smartcashier.app-merged_res-50:/layout_activity_main.xml.flat",
+        "source": "com.dicoding.smartcashier.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_bg_search.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\bg_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_bg_gradient.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\bg_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_fragment_transaction.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\fragment_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_username.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_username.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\navigation_nav_app.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\navigation\\nav_app.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_list_history.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\list_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_money.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_money.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_img_regist.png.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\img_regist.png"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_fragment_add.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\fragment_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\layout_activity_edit.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\layout\\activity_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-merged_res-50:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alyss\\.gradle\\daemon\\8.0\\com.dicoding.smartcashier.app-main-52:\\mipmap-hdpi\\ic_launcher_round.webp"
+    }
+]
