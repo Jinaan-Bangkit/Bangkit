@@ -55,16 +55,26 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextView tvAccLogin;
 
   @NonNull
+  public final TextView tvEmail;
+
+  @NonNull
   public final TextView tvLogin;
 
   @NonNull
   public final TextView tvNoHaveAcc;
 
+  @NonNull
+  public final TextView tvPassword;
+
+  @NonNull
+  public final TextView tvUsername;
+
   private ActivityRegisterBinding(@NonNull LinearLayout rootView, @NonNull Button btnRegister,
       @NonNull TextView buttonLogin, @NonNull CardView cvLogin, @NonNull TextInputEditText edtEmail,
       @NonNull TextInputEditText edtPassword, @NonNull TextInputEditText edtUsername,
       @NonNull ImageView imgRegister, @NonNull ProgressBar progressBar, @NonNull TextView textView,
-      @NonNull TextView tvAccLogin, @NonNull TextView tvLogin, @NonNull TextView tvNoHaveAcc) {
+      @NonNull TextView tvAccLogin, @NonNull TextView tvEmail, @NonNull TextView tvLogin,
+      @NonNull TextView tvNoHaveAcc, @NonNull TextView tvPassword, @NonNull TextView tvUsername) {
     this.rootView = rootView;
     this.btnRegister = btnRegister;
     this.buttonLogin = buttonLogin;
@@ -76,8 +86,11 @@ public final class ActivityRegisterBinding implements ViewBinding {
     this.progressBar = progressBar;
     this.textView = textView;
     this.tvAccLogin = tvAccLogin;
+    this.tvEmail = tvEmail;
     this.tvLogin = tvLogin;
     this.tvNoHaveAcc = tvNoHaveAcc;
+    this.tvPassword = tvPassword;
+    this.tvUsername = tvUsername;
   }
 
   @Override
@@ -167,6 +180,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_email;
+      TextView tvEmail = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmail == null) {
+        break missingId;
+      }
+
       id = R.id.tv_login;
       TextView tvLogin = ViewBindings.findChildViewById(rootView, id);
       if (tvLogin == null) {
@@ -179,9 +198,21 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_password;
+      TextView tvPassword = ViewBindings.findChildViewById(rootView, id);
+      if (tvPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_username;
+      TextView tvUsername = ViewBindings.findChildViewById(rootView, id);
+      if (tvUsername == null) {
+        break missingId;
+      }
+
       return new ActivityRegisterBinding((LinearLayout) rootView, btnRegister, buttonLogin, cvLogin,
           edtEmail, edtPassword, edtUsername, imgRegister, progressBar, textView, tvAccLogin,
-          tvLogin, tvNoHaveAcc);
+          tvEmail, tvLogin, tvNoHaveAcc, tvPassword, tvUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

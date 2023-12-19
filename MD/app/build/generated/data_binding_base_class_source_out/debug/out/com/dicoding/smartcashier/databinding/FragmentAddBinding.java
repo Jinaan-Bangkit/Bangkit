@@ -41,6 +41,9 @@ public final class FragmentAddBinding implements ViewBinding {
   public final EditText edSellItem;
 
   @NonNull
+  public final EditText edStockItem;
+
+  @NonNull
   public final ImageView ivCamera;
 
   @NonNull
@@ -55,11 +58,14 @@ public final class FragmentAddBinding implements ViewBinding {
   @NonNull
   public final TextView tvSellItem;
 
+  @NonNull
+  public final TextView tvStockItem;
+
   private FragmentAddBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCamera,
       @NonNull Button btnGallery, @NonNull Button buttonSaveItem, @NonNull EditText edBoughtItem,
-      @NonNull EditText edNameItem, @NonNull EditText edSellItem, @NonNull ImageView ivCamera,
-      @NonNull TextView tvAdd, @NonNull TextView tvBoughtItem, @NonNull TextView tvNameItem,
-      @NonNull TextView tvSellItem) {
+      @NonNull EditText edNameItem, @NonNull EditText edSellItem, @NonNull EditText edStockItem,
+      @NonNull ImageView ivCamera, @NonNull TextView tvAdd, @NonNull TextView tvBoughtItem,
+      @NonNull TextView tvNameItem, @NonNull TextView tvSellItem, @NonNull TextView tvStockItem) {
     this.rootView = rootView;
     this.btnCamera = btnCamera;
     this.btnGallery = btnGallery;
@@ -67,11 +73,13 @@ public final class FragmentAddBinding implements ViewBinding {
     this.edBoughtItem = edBoughtItem;
     this.edNameItem = edNameItem;
     this.edSellItem = edSellItem;
+    this.edStockItem = edStockItem;
     this.ivCamera = ivCamera;
     this.tvAdd = tvAdd;
     this.tvBoughtItem = tvBoughtItem;
     this.tvNameItem = tvNameItem;
     this.tvSellItem = tvSellItem;
+    this.tvStockItem = tvStockItem;
   }
 
   @Override
@@ -137,6 +145,12 @@ public final class FragmentAddBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.ed_stock_item;
+      EditText edStockItem = ViewBindings.findChildViewById(rootView, id);
+      if (edStockItem == null) {
+        break missingId;
+      }
+
       id = R.id.iv_camera;
       ImageView ivCamera = ViewBindings.findChildViewById(rootView, id);
       if (ivCamera == null) {
@@ -167,9 +181,15 @@ public final class FragmentAddBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_stock_item;
+      TextView tvStockItem = ViewBindings.findChildViewById(rootView, id);
+      if (tvStockItem == null) {
+        break missingId;
+      }
+
       return new FragmentAddBinding((ConstraintLayout) rootView, btnCamera, btnGallery,
-          buttonSaveItem, edBoughtItem, edNameItem, edSellItem, ivCamera, tvAdd, tvBoughtItem,
-          tvNameItem, tvSellItem);
+          buttonSaveItem, edBoughtItem, edNameItem, edSellItem, edStockItem, ivCamera, tvAdd,
+          tvBoughtItem, tvNameItem, tvSellItem, tvStockItem);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

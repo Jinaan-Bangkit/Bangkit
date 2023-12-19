@@ -56,7 +56,13 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView tvNoHaveAcc;
 
   @NonNull
+  public final TextView tvPassword;
+
+  @NonNull
   public final TextView tvRegister;
+
+  @NonNull
+  public final TextView tvUsername;
 
   @NonNull
   public final TextInputLayout userEditTextLayout;
@@ -66,7 +72,8 @@ public final class ActivityLoginBinding implements ViewBinding {
       @NonNull TextInputEditText edtUsername, @NonNull ImageView imgLogin,
       @NonNull TextInputLayout passwordEditTextLayout, @NonNull ProgressBar progressBar,
       @NonNull TextView tvAccLogin, @NonNull TextView tvLogin, @NonNull TextView tvNoHaveAcc,
-      @NonNull TextView tvRegister, @NonNull TextInputLayout userEditTextLayout) {
+      @NonNull TextView tvPassword, @NonNull TextView tvRegister, @NonNull TextView tvUsername,
+      @NonNull TextInputLayout userEditTextLayout) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
     this.cvLogin = cvLogin;
@@ -78,7 +85,9 @@ public final class ActivityLoginBinding implements ViewBinding {
     this.tvAccLogin = tvAccLogin;
     this.tvLogin = tvLogin;
     this.tvNoHaveAcc = tvNoHaveAcc;
+    this.tvPassword = tvPassword;
     this.tvRegister = tvRegister;
+    this.tvUsername = tvUsername;
     this.userEditTextLayout = userEditTextLayout;
   }
 
@@ -169,9 +178,21 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_password;
+      TextView tvPassword = ViewBindings.findChildViewById(rootView, id);
+      if (tvPassword == null) {
+        break missingId;
+      }
+
       id = R.id.tv_register;
       TextView tvRegister = ViewBindings.findChildViewById(rootView, id);
       if (tvRegister == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_username;
+      TextView tvUsername = ViewBindings.findChildViewById(rootView, id);
+      if (tvUsername == null) {
         break missingId;
       }
 
@@ -183,7 +204,7 @@ public final class ActivityLoginBinding implements ViewBinding {
 
       return new ActivityLoginBinding((LinearLayout) rootView, btnLogin, cvLogin, edtPassword,
           edtUsername, imgLogin, passwordEditTextLayout, progressBar, tvAccLogin, tvLogin,
-          tvNoHaveAcc, tvRegister, userEditTextLayout);
+          tvNoHaveAcc, tvPassword, tvRegister, tvUsername, userEditTextLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

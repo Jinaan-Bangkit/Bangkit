@@ -9,6 +9,12 @@
         android:targetSdkVersion="34" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <permission
         android:name="com.dicoding.smartcashier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -31,6 +37,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.SmartCashier" >
         <activity
+            android:name="com.dicoding.smartcashier.ui.detail.DetailItemActivity"
+            android:exported="false" />
+        <activity
             android:name="com.dicoding.smartcashier.ui.edit.EditActivity"
             android:exported="false" />
         <activity
@@ -48,6 +57,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
