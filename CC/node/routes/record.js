@@ -5,6 +5,9 @@ const Multer = require('multer')
 const { nanoid } = require('nanoid')
 const dayjs = require('dayjs')
 const db = require('../module/connection')
+const base64 = require('base-64')
+const utf8 = require('utf8')
+
 // process.env.TZ = 'America/Toronto'
 process.env.TZ = 'Asia/Jakarta'
 
@@ -137,6 +140,50 @@ router.get("/barang/:id", (req, res) => {
     
 });
 
+router.get("/barang/id", (req, res) => {
+    try{
+        const id = req.query.id
+        const query = "select * from barang where id_barang = '" + id + "'";
+        // const query = "select * from barang where id_barang = ?";
+        db.query(query, (err, rows, field) => {
+            if(err) {
+                res.status(500).send({message: err.sqlMessage})
+                console.log(err);
+            } else {
+                res.json(rows)
+                console.log(rows);
+            }
+        })
+    }catch(error){
+        console.error("Terjadi kesalahan:", error);
+        res.status(500).send({ message: "Terjadi kesalahan dalam server." });
+    
+    }
+    
+});
+
+router.get("/barang/nama", (req, res) => {
+    try{
+        const namaBarang = req.query.namaBarang
+        const query = "select * from barang where nama = '" + namaBarang + "'";
+        // const query = "select * from barang where id_barang = ?";
+        db.query(query, (err, rows, field) => {
+            if(err) {
+                res.status(500).send({message: err.sqlMessage})
+                console.log(err);
+            } else {
+                res.json(rows)
+                console.log(rows);
+            }
+        })
+    }catch(error){
+        console.error("Terjadi kesalahan:", error);
+        res.status(500).send({ message: "Terjadi kesalahan dalam server." });
+    
+    }
+    
+});
+
 router.post("/barang", (req, res) => {
     try{
         const id = nanoid(8)
@@ -188,9 +235,9 @@ router.post("/barangArray", (req, res) => {
 });
 
 
-router.put("/barang/:id", (req, res) => {
+router.put("/barang/id", (req, res) => {
     try{
-        const id = req.params.id
+        const id = req.query.id
         const nama = req.body.nama
         const hargaJual = req.body.hargaJual
         const hargaBeli = req.body.hargaBeli
@@ -214,10 +261,10 @@ router.put("/barang/:id", (req, res) => {
     
 });
 
-router.delete("/barang/:id", (req, res) => {
+router.delete("/barang/id", (req, res) => {
     try{
-        const id = req.params.id
-        console.log(req.params)
+        const id = req.query.id
+        console.log(req.query)
         console.log(id)
         const query = "delete from barang where id_barang = '" + id + "'";
         db.query(query, (err, rows, field) => {
@@ -659,6 +706,30 @@ router.get("/reportBulanan", (req, res) => {
     
 });
 
+
+router.get("/insertQuerySql", (req, res) => {
+    try{
+        var query = req.query.kueri
+
+        // decode base64
+        const bytes = base64.decode(query)
+        query = utf8.decode(bytes)
+        
+        db.query(query, (err, rows, field) => {
+            if(err) {
+                console.log(err);
+                res.status(500).send({message: err.sqlMessage})
+                return
+            } else {
+                console.log(rows);
+                res.json(rows)
+                return
+            }
+        })
+    }catch(error){
+        res.status(500).send({ message: "Terjadi kesalahan dalam server." });
+    }
+});
 
 
 router.get("/detailTable", (req, res) => {
