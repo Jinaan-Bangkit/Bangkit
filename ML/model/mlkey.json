@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "capstone-project201123",
+  "private_key_id": "53eace04cc8f9dcd371d2b33abe847254a85d833",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCHXEn223DOVos/\nVHmfCcypagPSM7H2EQ32bdQMVHWkohoxjJaEBsqVx7QKK/J5HD/dbO5iOfbykdrw\nSZi7F+Hit/5I+fkU6UnSsFmHvs0vEZEz2ZNFLJKNsC1nndMuznCTKGMOTrADXVvN\nYYvgZDJVcWDOtAJ1GmjJM29WfJ/QfnqTYWhfDBIP4LlFg2o9KFoyBipfFjUNj9sY\niAe+IG7A4Et4A/VUvQyCU4/MTREAcoisyAveQlkqypMQ2eHb3cTbx0CcS11bM0gJ\nGHSOt8CJRzobH3ff6lDqA2lOx0k1xjmTOGFtuj8ANDmmiv19E2JRPFpImLUv30ga\nb8Gp9LqfAgMBAAECggEAI9wNNDq6Tc+boDFu7vUXpSIS1RMg6EFoY4qBDKsrZ2wS\naGIIVf2+maOITNGLsQ4M1UpQdPFKPMTrLZExxw7ypq97zDV9CU8sYYaakV242elb\ngFL5su+1+5da0AJ9uf6y0Cl45IdwFdQbx/M5rT6eHwikTt5dcEyIyhS4QD9Pz1nv\n0xhvhHh1axpSMcKdySttNKytbaCCW9vMohbXoZlvJZd895hLiTmXNqlSZ1OxBMw8\nDXAkGIDoau567SDsyvgVcc8+++OzNxzOA9otXuQNsTZKPPy3i53sPzthiy+LxMCJ\nf6FHitdXpw2wPPqKmxOyysizQ7Zve8IkAzlVzY/DgQKBgQC+ZWAckkRHB/369ECz\nLLgfyhohln4hR8gUTpXXwp39TtEctDkUI9PCdsCzMVvRCy1pgiGMMVM6a6ejvW7p\n6GTdonp7oMfBgvPb2LC5h39p8tdzMVZ2tgOwlmLRrlfBICb/ldJKTDEeJamzSSGC\nbGFiYA/pnhkmKDbZqfXXXPYOIQKBgQC2AErOCuLWNr+pOykvCAuiHqRQWb5EP4p9\nXHVkJKlUPFHZwnJk1xGvA6IQDiCxkxweWIEGMq87Wp9TENUS2OOezHkFk+CSzxN+\n71GQ15pLXOcKmkvfN1OXumeEr5tW1RCFr/oU8m11sI65DD6ygu8TKYkvOOiNydpj\n68C0cHowvwKBgQCh4P2DrVTB8+icexmbfZUa6jGnhxW8ZBSYN2ytYroDSgT/W7gA\nCKod9+vFL106cj9tKogtcy6pSCjjTcfEtqMz0dZD0KKmRBnkPOudArhxM1i9hyBV\nlFG0zVg9oPbZq+WcfxypsPg+ApWzaqVEB7QQ+U3uOk51o9Fm5VuxfUdzIQKBgQCZ\nC2ncFZ9mTyegYVVibTuLGoVF5BFxRpVokYVNrt6NLSQPH8oeLhR6vW1cXuTzLiep\nBPeKhLiCCtSLf04NyUCvWnYyUIW6LlPQm+JVEFh5IyhN7C39CINMxb0jAKB5xjVc\nlfyP/MQ7ATsjNL7MUfpEfNsVUJ+OC72P5MFpemPl9QKBgQCCT9RD6vwB5XrmXzya\n/RUgKp3PUw1AoVLDFIF4I9aALKbYKoCrROW8n1l0ez65aWPmTDMCf8bmFosaPL4q\nXd++LMo/QMV8rpbKuLcpar1y4R/Z0SHmr9TV/1uBnYmRMKQdvzeTi6xi0S+zKzsj\nlY9IhPDdRNDNLlgyrqQN53Ozew==\n-----END PRIVATE KEY-----\n",
+  "client_email": "machinelearninginsance@capstone-project201123.iam.gserviceaccount.com",
+  "client_id": "107080997456832667518",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/machinelearninginsance%40capstone-project201123.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
