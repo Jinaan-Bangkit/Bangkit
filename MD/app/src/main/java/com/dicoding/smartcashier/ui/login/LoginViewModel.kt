@@ -17,53 +17,56 @@ import retrofit2.Response
 
 class LoginViewModel(private val pref: UserPreference): ViewModel() {
 
-    private val data = MutableLiveData<LoginResponse>()
+    //private val data = MutableLiveData<LoginResponse>()
 
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 
     val loginError = MutableLiveData<String>()
     val loginSuccess = MutableLiveData<Boolean>()
-
     fun login(name: String, password: String) {
         _isLoading.value = true
         val client = ApiConfig.getApiService().login(name, password)
-        client.enqueue(object : Callback<LoginResponse> {
-            override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+        client.enqueue(object : Callback<List<LoginResponse>> {
+            override fun onResponse(
+                call: Call<List<LoginResponse>>,
+                response: Response<List<LoginResponse>>
+            ) {
                 _isLoading.value = false
                 if (response.isSuccessful) {
-                    data.postValue(response.body())
-                    response.body()?.let { loginResponse ->
+                    val loginResponses = response.body()
+                    if (!loginResponses.isNullOrEmpty()) {
+                        val loginResponse = loginResponses[0]
                         saveLogin(UserModel(loginResponse.password ?: "", true))
                         loginSuccess.postValue(true)
+                    } else {
+                        loginError.postValue("Login failed: Empty response")
                     }
                 } else if (response.code() == 401) {
-                    loginError.postValue("\n" + "Login failed not authorized")
+                    loginError.postValue("\n" + "Login failed : Unauthorized")
                 } else {
                     Log.e(TAG, "Login Failed: ${response.message()}")
                     loginError.postValue("Login Failed: ${response.message()}")
                 }
             }
 
-            override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+            override fun onFailure(call: Call<List<LoginResponse>>, t: Throwable) {
                 _isLoading.value = false
                 Log.e(TAG, "onFailure: ${t.message!!}")
                 loginError.postValue("Login Failed: ${t.message}")
             }
+
         })
     }
-
 
     fun getUser(): LiveData<UserModel> {
         return pref.getUser().asLiveData()
     }
-
     fun saveLogin(user: UserModel) {
         viewModelScope.launch {
             pref.saveUser(user)
         }
     }
-
     companion object {
         private const val TAG = "LoginViewModel"
     }

@@ -18,7 +18,7 @@ class ViewModelFactory (private val pref: UserPreference): ViewModelProvider.New
                 MainViewModel(pref) as T
             }
             modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
-                HomeViewModel() as T
+                HomeViewModel(pref) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

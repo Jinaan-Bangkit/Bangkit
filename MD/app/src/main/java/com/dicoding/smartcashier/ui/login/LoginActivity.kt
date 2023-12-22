@@ -18,6 +18,7 @@ import com.dicoding.smartcashier.databinding.ActivityLoginBinding
 import com.dicoding.smartcashier.ui.MainActivity
 import com.dicoding.smartcashier.ui.ViewModelFactory
 import com.dicoding.smartcashier.ui.register.RegisterActivity
+import com.google.android.material.textfield.TextInputLayout
 
 class LoginActivity : AppCompatActivity() {
     private val Context.dataStore by preferencesDataStore("settings")
@@ -35,6 +36,12 @@ class LoginActivity : AppCompatActivity() {
         loginViewModel.getUser().observe(this) {
             this.user = it
         }
+
+        val edtUsername: TextInputLayout = findViewById(R.id.userEditTextLayout)
+        edtUsername.isHintAnimationEnabled = false
+
+        val edtPass: TextInputLayout = findViewById(R.id.passwordEditTextLayout)
+        edtPass.isHintAnimationEnabled = false
 
         setupView()
         setupAction()

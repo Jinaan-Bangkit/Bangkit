@@ -11,17 +11,18 @@
     <string name="tv_login">Login</string>
     <string name="signup">SIGN UP</string>
     <string name="have_acc">Have an account?</string>
-    <string name="dashboard">Dashboard</string>
+    <string name="title_transaction"> A D D - T R A N S A C T I O N</string>
     <string name="transaction">Transaction</string>
     <string name="cashier">Cashier</string>
     <string name="logout">Logout</string>
     <string name="home">Home</string>
     <string name="add_stock">Add</string>
     <string name="history">History</string>
+    <string name="title_update">S H O W - R E S T O C K</string>
     <string name="rec_item">Recommendation Item</string>
-    <string name="name_item">Item Name</string>
+    <string name="name_item">Item Name :</string>
     <string name="price">Price</string>
-    <string name="transaction_amount">TRANSACTION AMOUNT</string>
+    <string name="transaction_amount">TOTAL TRANSACTION</string>
     <string name="profit">PROFIT</string>
     <string name="income">INCOME</string>
     <string name="title_item">Household Items</string>
@@ -34,6 +35,7 @@
     <string name="id_item">Id Item : </string>
     <string name="id">Id</string>
     <string name="item">Name   : </string>
+    <string name="nama_barang">name</string>
     <string name="jumlah_jual">Jumlah Jual</string>
     <string name="jumlah_barang">1</string>
     <string name="empty_username">enter a username</string>
@@ -42,5 +44,19 @@
     <string name="welcome">WELCOME</string>
     <string name="create">Make Something New!</string>
     <string name="all">All Have Solutions!</string>
+    <string name="edit">Edit Items</string>
+    <string name="stock">Stock</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="remove">Remove</string>
+    <string name="detail">Item Detail</string>
+    <string name="stocks">Stock Item :</string>
+    <string name="add_item_title">A D D I T E M</string>
+    <string name="camera">CAMERA</string>
+    <string name="gallery">GALLERY</string>
+    <string name="save">SAVE</string>
+    <string name="send">SEND</string>
+    <string name="notification">Notification</string>
+    <string name="dfescription">Description :</string>
+    <string name="total">Total Stock :</string>
 
 </resources>

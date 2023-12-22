@@ -11,20 +11,19 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/historyFragment"
-        android:name="com.dicoding.smartcashier.ui.navigation.history.HistoryFragment"
+        android:id="@+id/transactionFragment"
+        android:name="com.dicoding.smartcashier.ui.navigation.addtransaction.AddTransactionFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction_add" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.dicoding.smartcashier.ui.navigation.notification.NotificationFragment"
         android:label="fragment_history"
-        tools:layout="@layout/fragment_history" />
+        tools:layout="@layout/fragment_notification" />
     <fragment
         android:id="@+id/addFragment"
         android:name="com.dicoding.smartcashier.ui.navigation.add.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" />
-    <fragment
-        android:id="@+id/transactionFragment"
-        android:name="com.dicoding.smartcashier.ui.navigation.transaction.TransactionFragment"
-        android:label="fragment_transaction"
-        tools:layout="@layout/fragment_transaction" />
-
 
 </navigation>

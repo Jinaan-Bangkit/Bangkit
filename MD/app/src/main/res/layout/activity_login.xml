@@ -56,14 +56,20 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/username"
+                    android:textColor="@color/navy" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/userEditTextLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:hint="@string/username">
+                    android:layout_marginBottom="5dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_username"
@@ -72,16 +78,23 @@
                         android:background="@drawable/edt_log"
                         android:drawableLeft="@drawable/ic_username"
                         android:drawablePadding="8dp"
-                        android:textColor="@color/navy"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textColor="@color/navy" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/password"
+                    android:textColor="@color/navy" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/passwordEditTextLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:hint="@string/password">
+                    app:hintAnimationEnabled="false">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_password"
@@ -91,11 +104,11 @@
                         android:background="@drawable/edt_log"
                         android:drawableLeft="@drawable/ic_lock"
                         android:drawablePadding="8dp"
-                        android:padding="8dp"
-                        android:textColor="@color/navy"
                         android:ems="8"
                         android:inputType="textPassword"
-                        tools:ignore="SpeakableTextPresentCheck"/>
+                        android:padding="8dp"
+                        android:textColor="@color/navy"
+                        tools:ignore="SpeakableTextPresentCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
@@ -129,7 +142,7 @@
             android:layout_height="wrap_content"
             android:text="@string/register"
             android:textAlignment="center"
-            android:textColor="@color/blue_222"
+            android:textColor="@color/blue"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginEnd="70dp"
