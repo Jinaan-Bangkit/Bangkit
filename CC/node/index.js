@@ -3,10 +3,12 @@ const app = express()
 const bodyParser = require('body-parser')
 
 const recordRouter = require('./routes/record')
+const backupRouter = require('./routes/backup')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(recordRouter)
+app.use(backupRouter)
 
 app.get("/", (req, res) => {
     console.log("Response success")
